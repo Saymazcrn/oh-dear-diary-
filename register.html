@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account - The Forgotten Journal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="landing">
+
+  <div class="lamp"></div>
+
+  <div class="landing-card">
+    <form id="registerForm">
+      <h2>Create Account</h2>
+
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="password" id="password2" placeholder="Confirm Password" required>
+
+      <button type="submit" class="btn">Create Account</button>
+
+      <p id="message"></p>
+
+      <button type="button" onclick="goHome()" class="btn secondary">
+        Home
+      </button>
+    </form>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

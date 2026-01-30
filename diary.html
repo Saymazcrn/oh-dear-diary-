@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Journal - The Forgotten Journal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="landing">
+
+  <div class="lamp"></div>
+
+  <div class="landing-card diary-scene">
+
+    <h2>The Forgotten Journal</h2>
+
+    <div class="diary-layout">
+
+      <!-- PAPER -->
+      <div class="paper">
+        <div id="date"></div>
+        <textarea id="entry" placeholder="What happened today?"></textarea>
+        <button onclick="saveDiary()">Seal the Page</button>
+      </div>
+
+      <!-- PAST ENTRIES -->
+      <div class="list">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3>Past Entries</h3>
+          <button onclick="newPage()">+</button>
+        </div>
+        <ul id="diaryList"></ul>
+      </div>
+
+    </div>
+
+    <div class="nav-buttons">
+  <button onclick="goHome()" class="btn">Home</button>
+  <button onclick="logout()" class="btn">Logout</button>
+  <button onclick="deleteAccount()" class="btn">Burn the Journal</button>
+</div>
+
+
+  </div>
+
+  <script src="js/diary.js"></script>
+  <script>
+    function goHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
+
+
